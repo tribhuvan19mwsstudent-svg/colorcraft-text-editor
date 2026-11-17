@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Textora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Textora</h1>
+
+    <p>EDIT YOUR THOUGHT HERE</p>
+
+    <textarea id="myText" placeholder="Type your text here"></textarea>
+    <br><br>
+
+    <button onclick="downloadText()">Download</button>
+
+    <h2>choose background color</h2>
+    <div class="colors">
+        <button class="color red" onclick="changeBackground('red')"></button>
+        <button class="color blue" onclick="changeBackground('blue')"></button>
+        <button class="color green" onclick="changeBackground('green')"></button>
+        <button class="color yellow" onclick="changeBackground('yellow')"></button>
+        <button class="color orange" onclick="changeBackground('orange')"></button>
+        <button class="color purple" onclick="changeBackground('purple')"></button>
+        <button class="color pink" onclick="changeBackground('pink')"></button>
+        <button class="color black" onclick="changeBackground('black')"></button>
+    </div>
+
+    <h2>choose text color</h2>
+    <div class="colors">
+        <button class="color red" onclick="changeTextColor('red')"></button>
+        <button class="color blue" onclick="changeTextColor('blue')"></button>
+        <button class="color green" onclick="changeTextColor('green')"></button>
+        <button class="color yellow" onclick="changeTextColor('yellow')"></button>
+        <button class="color orange" onclick="changeTextColor('orange')"></button>
+        <button class="color purple" onclick="changeTextColor('purple')"></button>
+        <button class="color pink" onclick="changeTextColor('pink')"></button>
+        <button class="color black" onclick="changeTextColor('black')"></button>
+    </div>
+
+    <h2>choose font family</h2>
+    <select id="fontFamily" onchange="changeFont()">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Verdana">Verdana</option>
+    </select>
+
+    <script src="script.js"></script>
+</body>
+</html>
